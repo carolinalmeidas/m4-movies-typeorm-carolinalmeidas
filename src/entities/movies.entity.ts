@@ -3,19 +3,19 @@ import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
 @Entity("movies")
 class Movie {
   @PrimaryGeneratedColumn("increment")
-  id: number
+  id: number;
 
   @Column({ type: "varchar", length: 50, unique: true })
-  name: string
+  name: string;
 
   @Column({ nullable: true, type: "text" })
-  description?: string | null | undefined
+  description?: string | null | undefined;
 
   @Column()
-  duration: number
+  duration: number;
 
   @Column()
-  price: number
+  price: number;
 }
 
 export default Movie;

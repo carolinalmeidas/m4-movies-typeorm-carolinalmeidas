@@ -29,8 +29,8 @@ const DataSourceConfig = (): DataSourceOptions => {
     }
 }
 
-const AppDatSource: DataSource = new DataSource(DataSourceConfig())
+const AppDataSource: DataSource = new DataSource(DataSourceConfig())
 
 export {
-    AppDatSource
+    AppDataSource
 }

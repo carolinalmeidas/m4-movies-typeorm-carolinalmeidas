@@ -1,7 +1,7 @@
 import app from "./app";
-import { AppDatSource } from "./data-source";
+import { AppDataSource } from "./data-source";
 
-AppDatSource.initialize()
+AppDataSource.initialize()
   .then(() => {
     console.log("Database is connected");
     app.listen(3000, () => {
